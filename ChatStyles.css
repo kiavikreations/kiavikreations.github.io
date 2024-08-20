@@ -1,0 +1,291 @@
+/* Resetting some default styles */
+body, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #800020;
+  margin: 20px 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #800020;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar .nav-links:hover {
+  background-color: 6a6a6a;
+}
+
+.navbar .nav-links li {
+    position: relative;
+}
+
+.navbar .nav-links a {
+    color: #fafafa;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar .nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #800020;
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.navbar .nav-links .dropdown-menu li a {
+    padding: 10px;
+}
+
+.navbar .nav-links .dropdown-menu li a:hover {
+  background-color: #800020;
+}
+
+.navbar .nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #6a6a6a;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.navbar .nav-links .dropdown:hover .dropbtn {
+  background-color: #6a6a6a;
+}
+
+.navbar .search input {
+    padding: 5px;
+    margin-left: 20px;
+}
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-banner .slides {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-banner .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Homepage Sections */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.featured-products, .about-us, .customer-reviews {
+    margin-bottom: 20px;
+}
+
+/* Responsive Gallery Section */
+div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*Responsive Shop Page*/
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #800020;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+}
+
+.product img {
+    width: 75%;
+    border-radius: 8px;
+}
+
+.product h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product .description {
+    font-size: 0.9em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.product .price {
+    font-size: 1.2em;
+    color: #007BFF;
+    margin: 10px 0;
+}
+
+.product button {
+    padding: 10px 15px;
+    background-color: #800020;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product button:hover {
+    background-color: #6a6a6a;
+}
+
+/* Footer */
+footer {
+    background-color: #800020;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Forms*/
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #800020;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #6a6a6a;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #b3aeaf;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
